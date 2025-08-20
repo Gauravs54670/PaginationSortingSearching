@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "4e1180bd-c411-46a7-be8d-2e2e0c04ed9c",
+		"name": "PaginationAndSorting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37895345"
+	},
+	"item": [
+		{
+			"name": "Post Entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Julia Adams\",\r\n    \"email\": \"julia.adams@example.com\",\r\n    \"contact\": \"9778899001\",\r\n    \"entryDescription\": \"Last pagination entry\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pagination/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pagination",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by entry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pagination/getIn-pages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pagination",
+						"getIn-pages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
